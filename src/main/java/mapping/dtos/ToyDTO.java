@@ -1,2 +1,6 @@
-package mapping.dtos;public class ToyDTO {
+package mapping.dtos;
+
+import model.ToyType;
+
+public record ToyDTO (String name, ToyType type,double price, int quantity){
 }

@@ -1,4 +1,4 @@
-package mapping;
+package mapping.mappers;
 
 import mapping.dtos.ToyDTO;
 import model.Toy;
@@ -8,6 +8,6 @@ public class ToyMapper {
         return new Toy(dto.name(),dto.type(),dto.price(),dto.quantity());
     }
     public static ToyDTO mapFrom(Toy model){
-        return new ToyDTO (model.getName(),model.getQuantity(),model.getPrice(),model.getType());
+        return new ToyDTO (model.getName(),model.getType(),model.getPrice(),model.getQuantity());
     }
 }
