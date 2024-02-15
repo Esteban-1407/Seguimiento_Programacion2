@@ -33,9 +33,7 @@ import java.util.List;
                 ois.close();
             } catch (FileNotFoundException e) {
                 System.out.println("Archivo no existe");
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } catch (ClassNotFoundException e) {
+            } catch (IOException | ClassNotFoundException e) {
                 throw new RuntimeException(e);
             }
             return toys;

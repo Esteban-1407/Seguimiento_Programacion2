@@ -19,7 +19,7 @@ public class ToyServicelmpl implements  ToyService{
     }
 
     @Override
-    public void addToy(ToyDTO toy) {
+    public void addToy(ToyDTO toy) throws Exception {
         Toy newToy = ToyMapper.mapFrom(toy);
         toyStore.add(newToy);
         FileUtils.saveToys(new File(Constants.PATH_TOYS), toyStore);
@@ -41,7 +41,7 @@ public class ToyServicelmpl implements  ToyService{
 
 
     @Override
-    public int showTotalCountToy() {
+    public int showTotalCountToy() throws Exception{
         int count = 0;
         for (Toy toy : toyStore){
             count+= toy.getQuantity();
@@ -74,14 +74,14 @@ public class ToyServicelmpl implements  ToyService{
     }
 
     @Override
-    public Object maxToy() throws Exception {
+    public Map.Entry<ToyType, Integer> maxToy() throws Exception {
         ToyType firstKey = ((TreeMap<ToyType, Integer>) showByType()).firstKey();
         Integer firstValue = showByType().get(firstKey);
         return new AbstractMap.SimpleEntry<>(firstKey,firstValue);
     }
 
     @Override
-    public Object minToy() throws Exception {
+    public Map.Entry<ToyType, Integer> minToy() throws Exception {
         ToyType lastKey = ((TreeMap<ToyType, Integer>) showByType()).lastKey();
         Integer lastValue = showByType().get(lastKey);
         return new AbstractMap.SimpleEntry<>(lastKey,lastValue);
@@ -93,7 +93,7 @@ public class ToyServicelmpl implements  ToyService{
 
 
     @Override
-    public List<ToyDTO> filterToysByPrice(double minPrice) {
+    public List<ToyDTO> filterToysByPrice(double minPrice) throws Exception{
         return toyStore.stream()
                 .filter(toy -> toy.getPrice() > minPrice)
                 .map(ToyMapper::mapFrom)
@@ -101,14 +101,14 @@ public class ToyServicelmpl implements  ToyService{
     }
 
     @Override
-    public List<ToyDTO> sortToysByQuantity() {
+    public List<ToyDTO> sortToysByQuantity() throws Exception{
         return toyStore.stream()
                 .sorted(Comparator.comparingInt(Toy::getQuantity))
                 .map(ToyMapper::mapFrom)
                 .collect(Collectors.toList());
     }
 
-    private List<ToyDTO> getAllToys() {
+    public List<ToyDTO> getAllToys() throws Exception {
         return toyStore.stream()
                 .map(ToyMapper::mapFrom)
                 .collect(Collectors.toList());

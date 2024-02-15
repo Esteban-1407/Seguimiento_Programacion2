@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfc4501a-b84f-4c5a-b55e-c41d17e6fccc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapping/dtos/ToyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapping/mappers/ToyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Toy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/ToyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/ToyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/ToyServicelmpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/service/impl/ToyServicelmplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/service/impl/ToyServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ToyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ToyServicelmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ToyServicelmpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/service/impl/ToyServicelmplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/toys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/toys.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +46,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.ToyServiceImplTest.addToy_Exception.executor": "Debug",
+    "JUnit.ToyServiceImplTest.filterToysByPrice_Successful.executor": "Run",
+    "JUnit.ToyServiceImplTest.sortToysByQuantity_Successful.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -72,6 +66,63 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.ToyServiceImplTest.addToy_Exception">
+    <configuration name="ToyServiceImplTest.addToy_Exception" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="co.edu.cue.juguteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.service.impl.ToyServiceImplTest" />
+      <option name="METHOD_NAME" value="addToy_Exception" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToyServiceImplTest.filterToysByPrice_Successful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="co.edu.cue.juguteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.service.impl.ToyServiceImplTest" />
+      <option name="METHOD_NAME" value="filterToysByPrice_Successful" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToyServiceImplTest.sortToysByQuantity_Successful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="co.edu.cue.juguteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.service.impl.ToyServiceImplTest" />
+      <option name="METHOD_NAME" value="sortToysByQuantity_Successful" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ToyServiceImplTest.addToy_Exception" />
+        <item itemvalue="JUnit.ToyServiceImplTest.sortToysByQuantity_Successful" />
+        <item itemvalue="JUnit.ToyServiceImplTest.filterToysByPrice_Successful" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -98,7 +149,9 @@
       <workItem from="1707831212275" duration="308000" />
       <workItem from="1707832202320" duration="3770000" />
       <workItem from="1707865605517" duration="1868000" />
-      <workItem from="1707911787525" duration="6205000" />
+      <workItem from="1707911787525" duration="6822000" />
+      <workItem from="1707949240239" duration="5173000" />
+      <workItem from="1708017681829" duration="6471000" />
     </task>
     <servers />
   </component>
